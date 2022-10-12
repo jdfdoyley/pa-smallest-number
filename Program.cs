@@ -22,27 +22,27 @@ public class LoopCalculation
         Console.WriteLine("Finding the Smallest Value:");
         Console.Write("How many integers would you like to enter: ");
         string? val = Console.ReadLine();
-        int inVal = Convert.ToInt32(val);
+        int counter = Convert.ToInt32(val);
 
-        int inVal2 = 0;
+        int inVal = 0;
         int smallestVal = 0;
 
         // Loop to get the specified number of integers from the user
-        for (int i = 0; i < inVal; i++)
+        for (int i = 0; i < counter; i++)
         {
             Console.Write("Enter an integer value: ");
             val = Console.ReadLine();
-            inVal2 = Convert.ToInt32(val);
+            inVal = Convert.ToInt32(val);
 
             if (i == 0)
             {
-                smallestVal = inVal2;
+                smallestVal = inVal;
                 continue;
             }
 
-            if (inVal2 < smallestVal)
+            if (inVal < smallestVal)
             {
-                smallestVal = inVal2;
+                smallestVal = inVal;
             }
 
         }
